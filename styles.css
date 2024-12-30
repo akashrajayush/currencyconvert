@@ -1,7 +1,6 @@
 body{
     background-color: antiquewhite;
 }
-<style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,300&family=Poppins:wght@400;600&display=swap');
 
         * {
@@ -132,4 +131,3 @@ body{
             font-family: 'Poppins', sans-serif;
             text-align: center;
         }
-    </style>
