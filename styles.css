@@ -1,3 +1,118 @@
-body{
+body {
     background-color: antiquewhite;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 900;
+    display: flex;
+    font-size: 20px;
+    background-color: rgb(224, 209, 245);
+    padding: 23px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: rgb(2, 3, 18);
+    transition: all 500ms;
+}
+
+nav li a:hover {
+    color: rgb(103, 101, 235);
+}
+
+div.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 23px;
+    font-size: 24px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+.container {
+    min-height: 100vh;
+    max-width: 80vw;
+    margin: auto;
+}
+
+.container h1, .container h2 {
+    margin: 23px 0;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container form label,
+.container form input[type='number'],
+.container form select {
+    font-size: 25px;
+    width: 23vw;
+    margin-bottom: 23px;
+}
+
+.btn {
+    width: 144px;
+    padding: 5px 8px;
+    font-size: 20px;
+    background: #e0d0f5;
+    color: black;
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+.output {
+    display: none;
+}
+
+.output table {
+    width: 50vw;
+    text-align: center;
+    border: 2px solid black;
+    font-size: 20px;
+}
+
+.output table th {
+    padding: 3px;
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        font-size: 14px;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 5px 13px;
+    }
+
+    .container {
+        max-width: 95vw;
+    }
+
+    .container form input[type='number'],
+    .container form select,
+    .container form label {
+        width: 80vw;
+    }
+}
+
+footer {
+    text-align: center;
 }
